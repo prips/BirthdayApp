@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.droidandme.birthdayapp.activity.AddMessageActivity$AddMessageFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Add a personalized message"
+        android:textSize="22sp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/fragment_add_message_editText"
+        android:nextFocusDown="@+id/fragment_add_message_preview_button"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_add_message_editText"
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Preview"
+        android:id="@+id/fragment_add_message_preview_button"
+        android:background="#CDDC39"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Next"
+        android:background="#CDDC39"
+        android:textColor="#FFFFFF"
+        android:id="@+id/fragment_add_message_next_button"
+       />
+    </LinearLayout>
+</RelativeLayout>
